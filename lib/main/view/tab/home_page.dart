@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_bxh/common/model/common_enum.dart';
 import 'package:flutter_bxh/common/model/icon_text_model.dart';
 import 'package:flutter_bxh/common/res/colors.dart';
 import 'package:flutter_bxh/common/res/dimens.dart';
 import 'package:flutter_bxh/common/widgets/icon_text.dart';
 import 'package:flutter_bxh/common/widgets/load_image.dart';
 import 'package:flutter_bxh/common/widgets/toast_utils.dart';
-import 'package:flutter_bxh/common/model/common_enum.dart';
 import 'package:flutter_bxh/main/widgets/list_item_trends.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.5,
         backwardsCompatibility: false,
         title: Text('中班（1）班', style: TextStyle(fontSize: Dimens.font_sp18, fontWeight: FontWeight.bold)),
         actions: <Widget>[

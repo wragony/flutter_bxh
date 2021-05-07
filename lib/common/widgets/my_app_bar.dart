@@ -99,6 +99,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: _overlayStyle,
       child: Material(
+        elevation: 0.5,
         color: _backgroundColor,
         child: SafeArea(
           child: Stack(
@@ -115,5 +116,5 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(48.0);
+  Size get preferredSize => const Size.fromHeight(55.0);
 }

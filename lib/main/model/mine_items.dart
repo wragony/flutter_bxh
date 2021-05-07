@@ -58,11 +58,52 @@ class MineItemModel {
 
     item = IconTextModel();
     item.code = MineItems.kqklr.index;
-    item.name = "考情卡录入";
+    item.name = "考勤卡录入";
     item.icon = "mine/icon_space_attendance_record";
+    item.type = CategoryType.html5;
+    items.add(item);
+
+    item = IconTextModel();
+    item.code = MineItems.rlxxlr.index;
+    item.name = "人脸信息录入";
+    item.icon = "mine/icon_space_face_attendance";
     item.type = CategoryType.native;
     items.add(item);
 
+    item = IconTextModel();
+    item.code = MineItems.grzl.index;
+    item.name = "个人资料";
+    item.icon = "mine/my_icon_personaldata";
+    item.type = CategoryType.native;
+    items.add(item);
+
+    item = IconTextModel();
+    item.code = MineItems.jfsc.index;
+    item.name = "积分商城";
+    item.icon = "mine/my_icon_mall";
+    item.type = CategoryType.html5;
+    items.add(item);
+
+    item = IconTextModel();
+    item.code = MineItems.xtsz.index;
+    item.name = "系统设置";
+    item.icon = "mine/my_icon_systemsetup";
+    item.type = CategoryType.native;
+    items.add(item);
+
+    item = IconTextModel();
+    item.code = MineItems.scdl.index;
+    item.name = "上传队列";
+    item.icon = "mine/my_icon_upload";
+    item.type = CategoryType.native;
+    items.add(item);
+
+    item = IconTextModel();
+    item.code = MineItems.bzyfk.index;
+    item.name = "帮助与反馈";
+    item.icon = "mine/my_icon_help";
+    item.type = CategoryType.native;
+    items.add(item);
 
     return items;
   }
