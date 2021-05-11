@@ -8,6 +8,7 @@ import 'package:flutter_bxh/common/res/dimens.dart';
 import 'package:flutter_bxh/common/widgets/icon_text.dart';
 import 'package:flutter_bxh/common/widgets/load_image.dart';
 import 'package:flutter_bxh/common/widgets/toast_utils.dart';
+import 'package:flutter_bxh/main/model/home_repository.dart';
 import 'package:flutter_bxh/main/widgets/list_item_trends.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
@@ -48,6 +49,7 @@ class _HomePageState extends State<HomePage> {
             tooltip: '筛选',
             onPressed: () {
               Toast.show('点击了${_filterBtn.tooltip}');
+              HomeRepository.getTrendsList();
             },
             icon: LoadAssetImage(
               'appbars/appbar_list_filter',

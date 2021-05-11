@@ -62,7 +62,7 @@ class _MinePageState extends State<MinePage> {
                     color: Colors.white,
                     child: ListTile(
                       onTap: () {
-                        Toast.show("test1");
+                        Toast.show('点击了->${item.name}');
                       },
                       leading: LoadAssetImage(
                         item.icon,

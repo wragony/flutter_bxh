@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
+import 'package:flutter_bxh/common/network/api_manager.dart';
 import 'package:flutter_bxh/common/routers/not_found_page.dart';
 import 'package:flutter_bxh/common/routers/routers.dart';
 import 'package:flutter_bxh/splash.dart';
@@ -15,6 +16,7 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp() : super() {
     Routes.initRoutes();
+    ApiManager.init("http://webapi.91sst.cn/v2/rat");
   }
 
   // This widget is the root of your application.
