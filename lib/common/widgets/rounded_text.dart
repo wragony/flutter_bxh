@@ -22,7 +22,7 @@ class RoundedTextView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
+      padding: padding,
       decoration:
           BoxDecoration(border: Border.all(color: borderColor, width: borderWidth), borderRadius: BorderRadius.circular((borderRadius))),
       child: Text(text, style: TextStyle(fontSize: fontSize, color: textColor)),
